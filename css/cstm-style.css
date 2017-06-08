@@ -54,15 +54,13 @@
 
     cursor: move;
     -webkit-transition: .2s ease-out;
-         -o-transition: .2s ease-out;
             transition: .2s ease-out;
     vertical-align: top;
 
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 .custom-list .custom-sublist {
