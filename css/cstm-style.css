@@ -63,14 +63,6 @@
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover;
-
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-}
-
-.custom-list .custom-item:hover {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
 }
 
 .custom-list .custom-sublist {
@@ -93,7 +85,13 @@
 .custom-list-2 .custom-sublist .custom-item:nth-child(3),
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item:first-child,
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:first-child + .custom-item,
-.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:nth-child(2) {
+.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:nth-child(2),
+.custom-list-1 .custom-sublist .custom-item:nth-child(3),
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item:first-child,
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:first-child + .custom-item,
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(2),
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(3),
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(5) {
     width: -webkit-calc(33.3333% - 8px);
     width:         calc(33.3333% - 8px);
     height: 77px;
@@ -101,10 +99,22 @@
     opacity: 1;
 }
 
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(3) {
+    height: 73px;
+}
+
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(5) {
+    margin-top: 3px;
+}
+
 .custom-list-2 .custom-sublist .custom-item:nth-child(4),
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item:nth-child(2),
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:nth-child(2) + .custom-item,
-.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:first-child {
+.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:first-child,
+.custom-list-1 .custom-sublist .custom-item:nth-child(4),
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item:nth-child(2),
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:nth-child(2) + .custom-item,
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:first-child {
     width: -webkit-calc(66.6666% - 8px);
     width:         calc(66.6666% - 8px);
     height: 77px;
@@ -115,7 +125,11 @@
 .custom-list-2 .custom-sublist .custom-item:first-child,
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item:nth-child(3),
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:nth-child(3) + .custom-item,
-.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:nth-child(4) {
+.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:nth-child(4),
+.custom-list-1 .custom-sublist .custom-item:first-child,
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item:nth-child(3),
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:nth-child(3) + .custom-item,
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(4) {
     width: -webkit-calc(66.6666% - 8px);
     width:         calc(66.6666% - 8px);
     height: 157px;
@@ -123,10 +137,17 @@
     opacity: 1;
 }
 
+.custom-list-1 .custom-sublist:nth-child(3n) .custom-item:nth-child(4) {
+    float: right;
+}
+
 .custom-list-2 .custom-sublist .custom-item:nth-child(2),
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item:nth-child(4),
 .custom-list-2 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:nth-child(4) + .custom-item,
-.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:nth-child(3) {
+.custom-list-2 .custom-sublist:nth-child(3n) .custom-item:nth-child(3),
+.custom-list-1 .custom-sublist .custom-item:nth-child(2),
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item:nth-child(4),
+.custom-list-1 .custom-sublist:nth-child(3n + 1) .custom-item.hidden:nth-child(4) + .custom-item {
     width: -webkit-calc(33.3333% - 8px);
     width:         calc(33.3333% - 8px);
     height: 157px;
@@ -136,4 +157,9 @@
 
 .sortable-chosen {
     cursor: move !important;
+}
+
+.custom-list-1 .custom-sublist {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
